@@ -289,7 +289,7 @@ module.exports = function(grunt) {
 			if (filepath.length && !_s.endsWith(filepath, '/')) {
 				filepath += '/';
 			}
-			return filepath;
+			return filepath.replace(/\\/g,"/");
 		}
 
 		// Generate URL for @font-face
