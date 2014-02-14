@@ -265,7 +265,7 @@ exports.webfont = {
 
 		// All slashes should be forward
 		test.ok(
-			demo.match(/url\(\\{0}\);/g),
+			(demo.indexOf("\\") === -1),
 			'No Forward slashes present'
 		);
 
